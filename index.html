@@ -55,7 +55,7 @@
             <a class="nav-link js-scroll" href="#about" onclick="closeModal()">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll" href="#work" onclick="closeModal()">Projects</a>
+            <a class="nav-link js-scroll" href="#work" onclick="closeModal()">Portfolio</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll" href="#contact" onclick="closeModal()">Contact</a>
@@ -74,8 +74,7 @@
         <div class="container">
           <!--<p class="display-6 color-d">Hello, world!</p>-->
           <h1 class="intro-title mb-4">I am Andrew Martin</h1>
-          <p class="intro-subtitle"><span class="text-slider-items">Software Developer,Software Engineer,Game
-              Programmer,Game Designer</span><strong class="text-slider"></strong></p>
+          <p class="intro-subtitle"><span class="text-slider-items">Software Developer,Software Engineer,Game Programmer,Game Designer</span><strong class="text-slider"></strong></p>
           <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
         </div>
       </div>
@@ -106,33 +105,54 @@
                     </div>
                   </div>
                 </div>
-                <p>make this a sliding thing with arrows on the side and a list of skills with images and a header that
-                  says "backend" yknow</p>
-                <!--
-                <div class="skill-mf">
-                  <p class="title-s">Skill</p>
-                  <span>Java</span> <span class="pull-right">85%</span>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0"
-                      aria-valuemax="100"></div>
+                <!--<p>TODO: make this a sliding thing with arrows on the side and a list of skills with images and a header that
+                  says "backend"</p>-->
+                <div class="row">
+                  <div class="col-sm-4">
+                    <h4 class="text-center title-s">Backend:</h4>
+                    <p>
+                      <ul class="skills-list">
+                        <li>Java</li>
+                        <li>JUnit</li>
+                        <li>C#</li>
+                        <li>SQL Server</li>
+                        <li>C <span class="learning">(learning)</span></li>
+                        <li>C++ <span class="learning">(learning)</span></li>
+                        <li>Python <span class="learning">(learning)</span></li>
+                      </ul>
+                    </p>
                   </div>
-                  <span>CSS3</span> <span class="pull-right">75%</span>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0"
-                      aria-valuemax="100"></div>
+                  <div class="col-sm-4">
+                    <h4 class="text-center title-s">Frontend:</h4>
+                    <p>
+                      <ul class="skills-list">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>JQuery</li>
+                        <li>Node.js</li>
+                        <li>Bootstrap</li>
+                        <li>Firebase</li>
+                      </ul>
+                    </p>
                   </div>
-                  <span>PHP</span> <span class="pull-right">50%</span>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0"
-                      aria-valuemax="100"></div>
-                  </div>
-                  <span>JAVASCRIPT</span> <span class="pull-right">90%</span>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
-                      aria-valuemax="100"></div>
+                  <div class="col-sm-4">
+                    <h4 class="text-center title-s">Tools:</h4>
+                    <p>
+                      <ul class="skills-list">
+                        <li>Git</li>
+                        <li>Eclipse IDE</li>
+                        <li>Unity</li>
+                        <li>Blender</li>
+                        <li>SFM</li>
+                        <li>Photoshop</li>
+                        <li>Gimp</li>
+                        <li>Audacity</li>
+                        <li>Unreal Engine <span class="learning">(learning)</span></li>
+                      </ul>
+                    </p>
                   </div>
                 </div>
-                -->
               </div>
               <div class="col-md-6">
                 <div class="about-me pt-4 pt-md-0">
@@ -147,7 +167,7 @@
                     applications of software development at the British Columbia Institute of Technology.
                   </p>
                   <p class="lead">
-                    I am interested in developing complex software that can improve efficiency and benfit others. I
+                    I am interested in developing complex software that can improve efficiency and benefit others. I
                     enjoy attending
                     hackathons where I can create software solutions with less time than needed.
                   </p>
@@ -187,10 +207,195 @@
     </div>
   </section>
 
+  <!--  Dimensional Chess Start  -->
+  <div id="projectsDiv" class="project paralax-mf bg-image" style="background-image: url(img/chess.png)">
+    <div class="overlay-proj"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div>
+            <span class="project-title">
+              <a href="https://globalgamejam.org/2020/games/jamjams-bizarre-adventure-2"
+                class="project-title link-light">
+                Dimensional Chess
+              </a>
+            </span>
+            <span class="project-date">
+              (Jan 2020 - Present)
+            </span>
+            <br />
+            <p class="project-purpose">
+              Academic / Personal Project
+            </p>
+            <p class="project-body">
+              A chess program that supports any number of dimensions (greater than 1). The program renders a 2D
+              cross-section
+              of the board you are playing on and you can move along the 3rd or 4th dimension using the arrow keys.
+            </p>
+            <span class="project-body">
+              <ul>
+                <li>Tasked with making chess for Java course, went above and beyond requirements.</li>
+                <li>User can choose the dimensions and size of the board.</li>
+                <li>Uses matrix algebra to deduce correct moves the player can make.</li>
+                <li>User can choose starting positions for pieces using the GUI and saving the layout as a file (in
+                  progress).</li>
+              </ul>
+            </span>
+            <div class="row project-images">
+              <div class="col-sm-4">
+                <a href="#">
+                  <img class="img-thumbnail" src="img/chess1.png" alt="chess1.png"
+                    onclick="openModal('chessModal');currentSlide(1)">
+                </a>
+              </div>
+              <div class="col-sm-4">
+                <a href="#">
+                  <img class="img-thumbnail" src="img/chess2.png" alt="chess2.png"
+                    onclick="openModal('chessModal');currentSlide(2)">
+                </a>
+              </div>
+
+              <div class="col-sm-4">
+                <a href="#">
+                  <img class="img-thumbnail" src="img/chess3.png" alt="chess3.png"
+                    onclick="openModal('chessModal');currentSlide(3)">
+                </a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div id="chessModal" class="modal">
+        <span class="close cursor" onclick="closeModal('chessModal')">&times;</span>
+        <div class="modal-content">
+
+          <div class="mySlides">
+            <div class="numbertext">1 / 3</div>
+            <img src="img/chess1.png">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">2 / 3</div>
+            <img src="img/chess2.png">
+          </div>
+
+
+          <div class="mySlides">
+            <div class="numbertext">3 / 3</div>
+            <img src="img/chess3.png">
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+      </div>
+      <!-- Modal End -->
+
+    </div>
+  </div>
+  <!--  Dimensional Chess End  -->
+
+  <!--  Equal Load Distribution Application Start  -->
+  <div id="projectsDiv" class="project paralax-mf bg-image" style="background-image: url(img/trucks2.png)">
+    <div class="overlay-proj"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div>
+            <span class="project-title">
+              <a href="https://globalgamejam.org/2020/games/jamjams-bizarre-adventure-2"
+                class="project-title link-light">
+                Equal Load Distribution Application
+              </a>
+            </span>
+            <span class="project-date">
+              (Jan 2020)
+            </span>
+            <br />
+            <p class="project-purpose">
+              QDS Hackathon 2020
+            </p>
+            <p class="project-body">
+              Software that improves the efficiency of Teck's mining operations by equally distributing trucks using
+              traffic
+              simulation and other data analysis techniques.
+            </p>
+            <span class="project-body">
+              <ul>
+                <!--efficiency-->
+                <li>Collaborated in a team of 3: two first year computing students and one business student.</li>
+                <li>Used data analysis to calculate and visualize standard deviation using histograms.</li>
+                <li>Calculated the equal distribution of trucks to shovels for optimal operations.</li>
+                <li>Simulated site traffic to determine when trucks take left turns and how they can avoid other trucks.</li>
+              </ul>
+            </span>
+            <div class="row project-images">
+              <div class="col-sm-4">
+                <a href="#">
+                  <img class="img-thumbnail" src="img/trucks1.png" alt="trucks1.png"
+                    onclick="openModal('truckModal');currentSlide(1)">
+                </a>
+              </div>
+              <div class="col-sm-4">
+                <a href="#">
+                  <img class="img-thumbnail" src="img/trucks2.png" alt="trucks2.png"
+                    onclick="openModal('truckModal');currentSlide(2)">
+                </a>
+              </div>
+
+              <div class="col-sm-4">
+                <a href="#">
+                  <img class="img-thumbnail" src="img/trucks3.png" alt="trucks3.png"
+                    onclick="openModal('truckModal');currentSlide(3)">
+                </a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- JamJam's Bizzare Adventure Modal -->
+      <div id="truckModal" class="modal">
+        <span class="close cursor" onclick="closeModal('truckModal')">&times;</span>
+        <div class="modal-content">
+
+          <div class="mySlides">
+            <div class="numbertext">1 / 3</div>
+            <img src="img/trucks1.png">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">2 / 3</div>
+            <img src="img/trucks2.png">
+          </div>
+
+
+          <div class="mySlides">
+            <div class="numbertext">3 / 3</div>
+            <img src="img/trucks3.png">
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+      </div>
+      <!-- JamJam's Bizzare Adventure Modal End -->
+
+    </div>
+  </div>
+  <!--  Equal Load Distributon End  -->
+
+
+
+
 
   <!--  JamJam's Bizzare Adventure Start  -->
   <div id="projectsDiv" class="project paralax-mf bg-image" style="background-image: url(img/jamjam.png)">
-    <div class="overlay-mf"></div>
+    <div class="overlay-proj"></div>
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -205,7 +410,10 @@
               (Jan 2020 - Present)
             </span>
             <br />
-            <p class="project-desc">
+            <p class="project-purpose">
+              Global Game Jam 2020 / Personal project
+            </p>
+            <p class="project-body">
               Join Jam and his friends on his quest to restore the great robot and save Boopville!
             </p>
             <p class="project-body">
@@ -213,35 +421,37 @@
             </p>
             <span class="project-body">
               <ul>
-                <li>Created in a group of 5 for the Global Game Jam 2020</li>
-                <li>Programmed the core gameplay mechanics and level generation</li>
-                <li>Continuous updates and support after the game jam</li>
+                <li>Created in a group of 5 for the Global Game Jam 2020.</li>
+                <li>Programmed the core gameplay mechanics and level generation.</li>
+                <li>Continuous updates and support after the game jam.</li>
               </ul>
             </span>
             <div class="row project-images">
               <div class="col-sm-4">
                 <a href="#">
-                  <img class="img-thumbnail" src="img/jamjam.png" alt=""
+                  <img class="img-thumbnail" src="img/jamjam1.png" alt="jamjam1.png"
                     onclick="openModal('jamModal');currentSlide(1)">
                 </a>
               </div>
               <div class="col-sm-4">
                 <a href="#">
-                  <img class="img-thumbnail" src="img/jamjam.png" alt=""
+                  <img class="img-thumbnail" src="img/jamjam2.png" alt="jamjam2.png"
                     onclick="openModal('jamModal');currentSlide(2)">
                 </a>
               </div>
+              <!--
               <div class="col-sm-4">
                 <a href="#">
-                  <img class="img-thumbnail" src="img/jamjam.png" alt=""
+                  <img class="img-thumbnail" src="" alt="jamjam3.png"
                     onclick="openModal('jamModal');currentSlide(3)">
                 </a>
               </div>
+              -->
             </div>
           </div>
         </div>
       </div>
-      
+
       <!-- JamJam's Bizzare Adventure Modal -->
       <div id="jamModal" class="modal">
         <span class="close cursor" onclick="closeModal('jamModal')">&times;</span>
@@ -249,19 +459,20 @@
 
           <div class="mySlides">
             <div class="numbertext">1 / 3</div>
-            <img src="img/jamjam.png">
+            <img src="img/jamjam1.png">
           </div>
 
           <div class="mySlides">
             <div class="numbertext">2 / 3</div>
-            <img src="img/jamjam.png">
+            <img src="img/jamjam2.png">
           </div>
 
+          <!--
           <div class="mySlides">
             <div class="numbertext">3 / 3</div>
             <img src="img/jamjam.png">
           </div>
-
+          -->
           <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
           <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
@@ -273,6 +484,93 @@
   <!--  JamJam's Bizzare Adventure End  -->
 
 
+  <!--  Recipe app Start  -->
+  <div id="projectsDiv" class="project paralax-mf bg-image" style="background-image: url(img/vegan.png)">
+    <div class="overlay-proj"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div>
+            <span class="project-title">
+              <a href="https://andrew-martin1.github.io/recipeProject/" class="project-title link-light">
+                Feelin' Vegan
+              </a>
+            </span>
+            <span class="project-date">
+              (Sept 2019 - Dec 2019)
+            </span>
+            <br />
+            <p class="project-purpose">
+              Academic Project
+            </p>
+            <p class="project-body">
+              Recipe app that provides vegan users with easy recipes based on their cravings. Determines which recipes
+              the user is interested in by using a questionnaire.
+            </p>
+            <span class="project-body">
+              <ul>
+                <li>Collaborated in a team of 2 using the Agile development method.</li>
+                <li>Designed iteratively with user feedback through questionnaires and prototyping.</li>
+                <li>Programmed app almost entirely using pure CSS, JavaScript and HTML.</li>
+                <li>Incorporated database functionality using Google Firebase.</li>
+              </ul>
+            </span>
+            <div class="row project-images">
+              <div class="col-sm-4">
+                <a href="#">
+                  <img class="img-thumbnail" src="img/vegan1.png" alt="vegan1.png"
+                    onclick="openModal('veganModal');currentSlide(1)">
+                </a>
+              </div>
+              <div class="col-sm-4">
+                <a href="#">
+                  <img class="img-thumbnail" src="img/vegan2.png" alt="vegan2.png"
+                    onclick="openModal('veganModal');currentSlide(2)">
+                </a>
+              </div>
+
+              <div class="col-sm-4">
+                <a href="#">
+                  <img class="img-thumbnail" src="img/vegan3.png" alt="vegan3.png"
+                    onclick="openModal('veganModal');currentSlide(3)">
+                </a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div id="veganModal" class="modal">
+        <span class="close cursor" onclick="closeModal('veganModal')">&times;</span>
+        <div class="modal-content">
+
+          <div class="mySlides">
+            <div class="numbertext">1 / 3</div>
+            <img src="img/vegan1.png">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">2 / 3</div>
+            <img src="img/vegan2.png">
+          </div>
+
+
+          <div class="mySlides">
+            <div class="numbertext">3 / 3</div>
+            <img src="img/vegan3.png">
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+      </div>
+      <!-- Modal End -->
+
+    </div>
+  </div>
+  <!--  Recipe App End  -->
 
 
   <!--/ Section Contact-Footer Star /-->
@@ -293,12 +591,9 @@
                   </div>
                   <div class="more-info">
                     <p class="lead">
-                      I am currently taking courses at BCIT, and I am looking for a job between May 2020 and January
-                      2021,
-                      May 2021 and September 2021, and after I graduate in December 2021. If you would like me on your
+                      I am currently taking courses at BCIT, and I am looking for an internship beginning May 2020. If you would like me on your
                       team,
-                      please contact me using the contact information below, or send me a message using the form to
-                      the left.
+                      please contact me using the contact information below.
                       <br /><br />
                       In addition, please send me any feedback you have on my projects. I am always looking to improve
                       them.

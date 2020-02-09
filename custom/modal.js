@@ -1,6 +1,8 @@
 var prevPosition;
+var id;
 
-function openModal(id) {
+function openModal(newId) {
+    id = newId;
     prevPosition = window.scrollY;
     document.getElementById(id).style.display = "block";
     disableScroll();
@@ -25,7 +27,8 @@ function currentSlide(n) {
 
 function showSlides(n) {
     var i;
-    var slides = document.getElementsByClassName("mySlides");
+    var slides = document.getElementById(id).getElementsByClassName("mySlides");
+    console.log(slides)
     var dots = document.getElementsByClassName("demo");
     var captionText = document.getElementById("caption");
     if (n > slides.length) {
