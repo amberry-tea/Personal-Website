@@ -12,6 +12,11 @@
 }
 
 
+.intro .overlay-itro {
+  /* De-fades the background, overwriting style.css */
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+
 
 .overlay-proj {
   background-color: #6600c5;
